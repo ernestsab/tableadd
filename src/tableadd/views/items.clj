@@ -8,7 +8,7 @@
    (form/form-to [:post "/"]
                  (form/label "item" "Add stuff to postgre table")
                  (form/text-area "item")
-                 (form/submit-button "Add!"))])
+                 (form/submit-button "Add"))])
 
 (defn display-items [items]
   [:div {:class "items sixteen columns alpha omega"}

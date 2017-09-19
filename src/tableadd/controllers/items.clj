@@ -9,12 +9,12 @@
   (view/index (model/all)))
 
 (defn create
-  [entry]
-  (when-not (or (str/blank? entry)
-                (> (count entry) 512))
-    (model/create entry))
+  [item]
+  (when-not (or (str/blank? item)
+                (> (count item) 512))
+    (model/create item))
   (ring/redirect "/"))
 
 (defroutes routes
   (GET  "/" [] (index))
-  (POST "/" [entry] (create entry)))
+  (POST "/" [item] (create item)))
