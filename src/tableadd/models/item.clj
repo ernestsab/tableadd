@@ -8,4 +8,11 @@
   (into [] (sql/query spec ["select * from items order by id desc limit 128"])))
 
 (defn create [item]
-  (sql/insert! spec :items [:first_name] [item]))
+  (sql/insert! spec 
+               :items [:first_name] [item]
+               :items [:last_name] [item]
+               :items [:phone_number] [item]
+               :items [:last_name] [item]
+               :items [:kenmerk_gebruiker] [item]))
+
+			  
