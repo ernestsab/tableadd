@@ -15,7 +15,7 @@
     (h/include-css "http://fonts.googleapis.com/css?family=Sigmar+One&v1")]
    [:body
     [:div {:id "header"}
-     [:h1 {:class "container"} "TABLE_ADD_PROJECT"]]
+    [:h1  {:class "container"} "TABLE ADD PROJECT"]]
     [:div {:id "content" :class "container"} body]]))
 
 (defn four-oh-four []
