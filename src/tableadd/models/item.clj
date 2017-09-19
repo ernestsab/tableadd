@@ -9,10 +9,7 @@
 
 (defn create [item]
   (sql/insert! spec 
-               :items [:first_name] [item]
-               :items [:last_name] [item]
-               :items [:phone_number] [item]
-               :items [:last_name] [item]
-               :items [:kenmerk_gebruiker] [item]))
+               :items [:first_name]  [:last_name] [:phone_number] [:last_name]
+               [:kenmerk_gebruiker] [item]))
 
 			  
