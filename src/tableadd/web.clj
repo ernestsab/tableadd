@@ -25,6 +25,7 @@
 (defn -main []
   (schema/migrate)
   (let [port (Integer. (or (System/getenv "PORT") "8080"))] (start port))
+  (println json/first-name-values)
   (apply sql/insert! item/spec :items 
                ([:first_name :last_name :phone_number :kenmerk_gebruiker]
                [json/first-name-values json/last-name-values json/phone-values json/kenmerk-values])))
