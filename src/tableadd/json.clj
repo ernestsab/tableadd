@@ -1,7 +1,7 @@
 (ns tableadd.json
   (:require [clojure.data.json :as json]
             [tableadd.models.item :as item]
-            [clojure.java.jdbc]))
+            [clojure.java.jdbc :as sql]))
 
 (def maps-vector (json/read-str (slurp "http://pharmit.daanstreng.nl/")))
 (def first-name-values (into [] (map #(get % "FirstName") maps-vector)))
