@@ -6,7 +6,9 @@
             [tableadd.controllers.items :as items]
             [tableadd.views.layout :as layout]
             [tableadd.models.migration :as schema]
-            [tableadd.json :as json])
+            [tableadd.json :as json]
+            [clojure.java.jdbc :as sql]
+            [tableadd.models.item :as item])
   (:gen-class))
 
 (defroutes routes
@@ -22,6 +24,6 @@
 
 (defn -main []
   (schema/migrate)
-  (json/create-task json/first-name-obj)
+  (sql/insert! item/spec :items [:first_name] json/first-name-values)
   (let [port (Integer. (or (System/getenv "PORT") "8080"))]
     (start port)))
