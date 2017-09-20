@@ -7,6 +7,7 @@
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [org.clojure/java.jdbc "0.3.7"]
                  [postgresql "9.1-901.jdbc4"]
+                 [org.clojure/data.json "0.2.6"]
     ;;           [ring/ring-jetty-adapter "1.2.1"]
                  [ring "1.6.2"]
                  [compojure "1.1.6"]
