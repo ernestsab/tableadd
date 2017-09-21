@@ -6,9 +6,9 @@
             [tableadd.controllers.items :as items]
             [tableadd.views.layout :as layout]
             [tableadd.models.migration :as schema]
-            [tableadd.json :as json]
             [clojure.java.jdbc :as sql]
-            [tableadd.models.item :as item])
+            [tableadd.models.item :as item]
+            [tableadd.json :as json])
   (:gen-class))
 
 (defroutes routes
