@@ -9,6 +9,8 @@
 (def phone-values (into [] (map #(get % "PhoneNumber") maps-vector)))
 (def kenmerk-values (into [] (map #(get % "KenmerkGebruiker") maps-vector)))
 
+
+
 ;(def first-name-obj
 ;  (.createArrayOf item/spec "varchar" (into-array String first-name-values)))
 ;(def last-name-obj
@@ -22,3 +24,5 @@
   (sql/insert! item/spec
                :items [:first_name] [task-name])
   (println (str "Adding task " task-name " right now")))
+
+
