@@ -3,7 +3,7 @@
             [tableadd.models.item :as item]
             [clojure.java.jdbc :as sql]))
 
-;(def con (sql/get-connection db))
+(def con (sql/get-connection item/spec))
 
 (def maps-vector (json/read-str (slurp "http://pharmit.daanstreng.nl/")))
 (def first-name-values (into [] (map #(get % "FirstName") maps-vector)))
@@ -13,7 +13,7 @@
 
 
 
-(def first-name-obj (.createArrayOf item/spec "varchar" (into-array String first-name-values)))
+(def first-name-obj (.createArrayOf con "varchar" (into-array String first-name-values)))
 ;(def last-name-obj
 ;  (.createArrayOf item/spec "varchar" (into-array String last-name-values)))
 ;(def phone-obj
