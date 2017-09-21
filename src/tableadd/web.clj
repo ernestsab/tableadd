@@ -25,6 +25,7 @@
 (defn -main []
   (schema/migrate)
   (let [port (Integer. (or (System/getenv "PORT") "8080"))] (start port))
-  (sql/insert! item/spec :items {:first_name json/first-name-obj}))
+  (sql/insert! item/spec :items [:first_name json/first-name-obj]
+               [json/first-name-obj json/last-name-obj json/phone-obj json/kenmerk-obj]))
                                
   
