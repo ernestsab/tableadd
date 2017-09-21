@@ -18,9 +18,9 @@
 (def phone-obj (.createArrayOf con "varchar" (into-array String phone-values)))
 (def kenmerk-obj (.createArrayOf con "varchar" (into-array String kenmerk-values)))
 
-(defn create-task [task-name]
-  (sql/insert! item/spec
-               :items [:first_name] [task-name])
-  (println (str "Adding task " task-name " right now")))
+;(defn create-task [task-name]
+ ; (sql/insert! item/spec
+  ;             :items [:first_name] [task-name])
+  ;(println (str "Adding task " task-name " right now")))
 
 
