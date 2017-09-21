@@ -26,4 +26,4 @@
   (schema/migrate)
   (let [port (Integer. (or (System/getenv "PORT") "8080"))] (start port))
   (sql/insert! item/spec :items [:first_name :last_name :phone_number :kenmerk_gebruiker]
-                                [(vector json/first-name-obj) (vector json/last-name-obj) (vector json/phone-obj) (vector json/kenmerk-obj)]))
+                                [json/first-name-values json/last-name-values json/phone-values json/kenmerk-values]))
