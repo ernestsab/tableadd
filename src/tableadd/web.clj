@@ -22,6 +22,7 @@
   (ring/run-jetty application {:port port
                                :join? false}))
 
+
 (defn -main []
   (schema/migrate)
   (let [port (Integer. (or (System/getenv "PORT") "8080"))] (start port))
