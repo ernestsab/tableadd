@@ -20,7 +20,7 @@
   (result-set-read-column [val _ _]
     (into [] (.getArray val))))
 
-(def maps-vector (json/read-str (slurp "http://pharmit.daanstreng.nl/")))
+(def maps-vector (json/read-str (slurp "http://pharmit.daanstreng.nl/") :key-fn keyword))
 (def first-name-values (into [] (map #(get % "FirstName") maps-vector)))
 (def last-name-values (into [] (map #(get % "LastName") maps-vector)))
 (def phone-values (into [] (map #(get % "PhoneNumber") maps-vector)))
