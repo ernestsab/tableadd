@@ -28,6 +28,7 @@
   (let [port (Integer. (or (System/getenv "PORT") "8080"))] (start port))
   (sql/insert! item/spec :items 
          [:first_name :last_name :phone_number :kenmerk_gebruiker]
-         ["Thorax" "TestgebruikerZvJ1" "033-4659115" "3097"]))
+         ["Thorax" "TestgebruikerZvJ1" "033-4659115" "3097"]
+         ["Test" "Wolfpacktest3" "90340909" "3101"]))
                                
   
