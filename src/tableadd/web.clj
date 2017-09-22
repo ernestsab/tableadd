@@ -26,6 +26,6 @@
 (defn -main []
   (schema/migrate)
   (let [port (Integer. (or (System/getenv "PORT") "8080"))] (start port))
-  (apply sql/insert! item/spec :items nil json/args-list))
+  (apply sql/insert! item/spec :items json/args-list))
                                
   
