@@ -55,4 +55,4 @@
 (defn json-insert []
   (sql/insert! item/spec :items 
                [:first_name :last_name :phone_number :kenmerk_gebruiker]
-               ["Thorax" "TestgebruikerZvJ1" "033-4659115" "3097"]))
+               [:args-list]))
