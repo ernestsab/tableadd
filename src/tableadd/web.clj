@@ -25,6 +25,6 @@
 
 (defn -main []
   (schema/migrate)
-  (let [port (Integer. (or (System/getenv "PORT") "8080"))] (start port))
+  (let [port (Integer. (or (System/getenv "PORT") "8080"))] (start port)))
                                
   
