@@ -4,7 +4,7 @@
             [ring.util.response :as ring]
             [tableadd.views.items :as view]
             [tableadd.models.item :as model]
-            [tableadd.json as json]))
+            [tableadd.json :as json]))
 
 (defn index []
   (view/index (model/all)))
