@@ -1,13 +1,13 @@
 (ns tableadd.models.item
   (:require [clojure.java.jdbc :as sql]))
 
-(def spec (or (System/getenv "DATABASE_URL")
-              "postgresql://localhost:5432/tableadd"))
+; (def spec (or (System/getenv "DATABASE_URL")
+;               "postgresql://localhost:5432/tableadd"))
 
-(def postgres {:subprotocol "postgresql"
-               :subname "//ec2-54-225-182-108.compute-1.amazonaws.com:5432/d990r2bpqnml11"
-               :user "hbfxruceherfaq"
-               :password "ffda9bbfd61a597d596edf27289d269b6565a4558c3920c8bc5b2ce9f3d6f189"
+(def spec {:subprotocol "postgresql"
+               :subname "//ec2-54-221-221-153.compute-1.amazonaws.com:5432/da62bk7qc0r3o3"
+               :user "cefgxbodvolovf"
+               :password "6f31bcb812332f5547c56d2235a8a2d84c220cea66d4eb59dafe6416f1cca1dd"
                :ssl true
                :sslmode true
                :sslfactory "org.postgresql.ssl.NonValidatingFactory"})
