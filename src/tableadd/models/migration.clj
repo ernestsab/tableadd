@@ -11,7 +11,7 @@
 (defn migrate []
   (when (not (migrated?))
     (print "making table and it crashes......") (flush)
-    (sql/db-do-commands spec
+    (sql/db-do-commands item/spec
                         (sql/create-table-ddl 
                         :items
                          [:id :serial "PRIMARY KEY"]
