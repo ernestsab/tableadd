@@ -34,7 +34,7 @@
 ; (def kenmerk-obj (.createArrayOf con "varchar" (into-array String kenmerk-values)))
 
 
-(def args-list (["Thorax" "TestgebruikerZvJ1" "033-4659115" "3097"] 
+(def args-list '(["Thorax" "TestgebruikerZvJ1" "033-4659115" "3097"] 
  ["Test" "Wolfpacktest1" "01010101" "3099"] 
  ["Test" "Wolfpacktest3" "90340909" "3101"] 
  ["Test" "Wolfpacktest2" "01010101" "3100"] 
