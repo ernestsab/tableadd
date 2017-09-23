@@ -1,1 +1,0 @@
-web: java $JVM_OPTS -cp target/tableadd.jar clojure.main -m tableadd.web $PORT
