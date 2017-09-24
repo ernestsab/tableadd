@@ -54,5 +54,5 @@
 
 
 (defn json-insert []
- (map (apply sql/insert! item/spec :items 
+ (map (sql/insert! item/spec :items 
       nil args-list)))
