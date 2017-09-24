@@ -19,5 +19,5 @@
                          [:last_name :varchar]
                          [:phone_number :varchar]
                          [:kenmerk_gebruiker :varchar]
-                         [:created_at :timestamp "NOT NULL" "DEFAULT CURRENT_TIMESTAMP"]]))
+                         [:created_at :timestamp "DEFAULT CURRENT_TIMESTAMP"]]))
     (println " done")))
