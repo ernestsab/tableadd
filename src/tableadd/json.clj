@@ -55,4 +55,4 @@
 
 
 (defn json-insert []
-  (apply sql/insert! item/spec :items {:first_name "floris"}  ))
+  (sql/insert! item/spec :items {:first_name "floris"}))
