@@ -15,9 +15,9 @@
                         (sql/create-table-ddl 
                         :items
                          [[:id :serial "PRIMARY KEY"]
-                         [:first_name :varchar "NOT NULL"]
-                         [:last_name :varchar "NOT NULL"]
-                         [:phone_number :varchar "NOT NULL"]
-                         [:kenmerk_gebruiker :varchar "NOT NULL"]
+                         [:first_name :varchar]
+                         [:last_name :varchar]
+                         [:phone_number :varchar]
+                         [:kenmerk_gebruiker :varchar]
                          [:created_at :timestamp "NOT NULL" "DEFAULT CURRENT_TIMESTAMP"]]))
     (println " done")))
