@@ -6,7 +6,8 @@
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [org.clojure/java.jdbc "0.7.1"]
-                 [postgresql "9.1-901.jdbc4"]
+                 ;[postgresql "9.1-901.jdbc4"]
+                 [org.postgresql/postgresql "9.4.1212.jre7"]
                  [org.clojure/data.json "0.2.6"]
                  [mysql/mysql-connector-java "5.1.6"]
     ;;           [ring/ring-jetty-adapter "1.2.1"]
