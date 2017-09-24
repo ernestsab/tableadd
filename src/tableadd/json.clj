@@ -51,9 +51,9 @@
   ;             :items [:first_name] [task-name])
   ;(println (str "Adding task " task-name " right now")))
   
-(def rows (repeat 10 ["Thorax" "TestgebruikerZvJ1" "033-4659115" "3097"]))
+(def rows (sql/.createArrayOf (repeat 10 ["Thorax" "TestgebruikerZvJ1" "033-4659115" "3097"])))
 
 
 (defn json-insert []
   (apply sql/insert! item/spec :items 
-      [:first_name :last_name :phone_number :kenmerk_gebruiker] (sql/.createArrayOf rows)))
+      [:first_name :last_name :phone_number :kenmerk_gebruiker] rows))
