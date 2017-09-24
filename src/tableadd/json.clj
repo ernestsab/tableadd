@@ -56,4 +56,4 @@
 
 (defn json-insert []
   (apply sql/insert! item/spec :items 
-      [:first_name :last_name :phone_number :kenmerk_gebruiker] (sql/createArrayOf rows)))
+      [:first_name :last_name :phone_number :kenmerk_gebruiker] (sql/.createArrayOf rows)))
