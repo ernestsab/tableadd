@@ -54,5 +54,5 @@
 
 
 (defn json-insert []
- (sql/insert-multi! spec :items 
+ (sql/insert-multi! item/spec :items 
         [:first_name :last_name :phone_number :kenmerk_gebruiker]) args_list)
