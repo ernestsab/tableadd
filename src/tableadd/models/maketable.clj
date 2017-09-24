@@ -1,16 +1,16 @@
-(ns tableadd.models.migration
+(ns tableadd.models.maketable
   (:require [clojure.java.jdbc :as sql]
             [tableadd.models.item :as item]))
 
-(defn migrated? []
+(defn exists? []
   (-> (sql/query item/spec
                  [(str "select count(*) from information_schema.tables "
                        "where table_name='items'")])
       first :count pos?))
 
-(defn migrate []
-  (when (not (migrated?))
-    (print "making table and it crashes......") (flush)
+(defn make []
+  (when (not (exists?))
+    (print "making table and it freakin crashes......") (flush)
     (sql/db-do-commands item/spec
                         (sql/create-table-ddl 
                         :items

@@ -5,7 +5,7 @@
             [compojure.handler :as handler]
             [tableadd.controllers.items :as items]
             [tableadd.views.layout :as layout]
-            [tableadd.models.migration :as schema]
+            [tableadd.models.maketable :as schema]
             [clojure.java.jdbc :as sql]
             [tableadd.models.item :as item]
             [tableadd.json :as json])
@@ -24,7 +24,7 @@
 
 
 (defn -main []
-  (schema/migrate)
+  (schema/make)
   (let [port (Integer. (or (System/getenv "PORT") "8080"))] (start port)))
                                
   
