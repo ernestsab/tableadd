@@ -43,7 +43,7 @@
  ["Test" "Wolfpacktest6" "01010101010010101" "3104"] 
  ["Test" "Wolfpacktest7" "1010101010" "3105"] 
  ["Thorax" "TestgebruikerZvJ2" "033 465 91 15" "3095"] 
- ["Thorax" "TestgebruikerZvJBeheer" "033-46591152" "3094"])
+ ["Thorax" "TestgebruikerZvJBeheer" "033-46591152" "3094"]])
 
 ;(defn create-task [task-name]
  ; (sql/insert! item/spec
