@@ -17,7 +17,7 @@
     items)])
 
 (defn index [items]
-  (layout/common "TABLEADD"
+  (layout/common "TABLE ADD PROJECT"
                  (item-form)
                  [:div {:class "clear"}]
                  (display-items items)))
