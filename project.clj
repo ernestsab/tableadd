@@ -2,8 +2,8 @@
   :description "Add stuff in the database"
   :url ""
   :min-lein-version "2.0.0"
-  :license {:name "Eclipse Public License"
-            :url "http://www.eclipse.org/legal/epl-v10.html"}
+  :license {:name "MIT License"
+            :url "https://opensource.org/licenses/MIT"}
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [org.clojure/java.jdbc "0.7.1"]
                  ;[postgresql "9.1-901.jdbc4"]
