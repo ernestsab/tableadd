@@ -1,14 +1,9 @@
 # tableadd
 
-A Clojure library designed to ... well, that part is up to you.
+You can add strings in a postgres database and every time you push the "Add" button the content of a json file is added as well.
 
 ## Usage
 
-FIXME
 
 ## License
 
-Copyright © 2017 FIXME
-
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
